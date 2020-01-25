@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>ituens</title>
+  <link rel = "icon" href = "icon.jpg">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+  <nav>
+    <div class="player">
+      <i style="margin-left: 50px; font-size: 22px"class="fa fa-backward"></i>
+      <i onclick="playS()" id="state" class="fa fa-play"></i>
+      <i style="font-size: 22px"class="fa fa-forward"></i>
+      <form name="range">
+        <input onchange="changeVolume()" name="rangeValue" type="range" min="0" max="100">
+      </form>
+      <div class="now-playing">
+        <img src="image/art.png" style="width: 60px; height: 60px;">
+        <h6>Anomaly</h6>
+        <div class="slidingText">
+        <marquee>05.Fear Anomaly Lecrea 2014</marquee>
+      </div>
+      </div>
+      <div class="signIn">
+        <img src="image/signIn.jpg">
+      </div>
+      <div class="form-search">
+      <input type="search" placeholder="search"/>
+      </div>
+    </div>
+    <ul>
+      <li><a href="#"><i class="fa fa-music active"></i></a></li>
+      <li><a href="#"><i class="fa fa-video-camera"></i></a></li>
+      <li><a href="#"><i class="fa fa-tv"></i></a></li>
+      <li><a href="#" style="font-size: 24px; font-weight: bolder;"><sup>...</sup></a></li>
+      <li  style="margin-left: 30%;"><a class="active" href="#">My Music</a></li>
+      <li><a href="#">Playlist</a></li>
+      <li><a href="#">iTunes store</a></li>
+      <li style="float:right"><a href="#">Albums</a></li>
+    </ul>
+  </nav>
+  <div class="header">
+  <h5 style="margin-top: 50px; margin-left: 30px;font-weight: 100;">Recently Added</h5>
+  <p>Show less</p>
+  </div>
+<!-- MUSIC LIST -->
+
+ <div class="music">
+   <img onclick="openL()" src="image/artwork1.png" alt="clip art" width="400" height="400">
+   <div class="desc">Anomaly</div>
+ </div>
+<div class="list-image">
+   <p>Anomaly</p>
+   <span id="art">Lecrea.2014</span>
+   <div class="audios">
+     <span onclick="play(this)" >04.Nuthin</span><br>
+     <audio id="04.Nuthin">
+       <source src="music/04.Nuthin.mp3" type="audio/mpeg">
+      </audio>
+     <span onclick="play(this)" >05.Fear</span><br>
+     <audio id="05.Fear">
+       <source src="music/05.Fear.mp3" type="audio/mpeg">
+      </audio>
+     <span onclick="play(this)" >06.Anomaly</span><br>
+     <audio id="06.Anomaly">
+       <source src="music/06.Anomaly.mp3" type="audio/mpeg">
+      </audio>
+     <span onclick="play(this)" >07.Timepiece</span><br>
+     <audio id="07.Timepiece">
+       <source src="music/07.Timepiece.mp3" type="audio/mpeg">
+      </audio>
+   </div>
+   <img id="art2" src="image/artwork1.png" alt="clip art" width="200" height="200">
+ </div>
+ <div class="music">
+   <img onclick="openL()" src="image/artwork2.png" alt="clip art" width="400" height="400">
+   <div class="desc">Nf manshin</div>
+ </div>
+ <div style="background-image: url('image/brtwork2.jpg'); color: #fff;" class="list-image">
+    <p>Manshin</p>
+    <span id="art">NF.2015</span>
+    <div class="audios">
+      <span onclick="play(this)" >01 NF - Intro</span><br>
+      <audio id="01 NF - Intro">
+        <source src="music/01 NF - Intro.mp3" type="audio/mpeg">
+       </audio>
+      <span onclick="play(this)" >05.Fear</span><br>
+      <audio id="05.Fear">
+        <source src="music/05.Fear.mp3" type="audio/mpeg">
+       </audio>
+      <span onclick="play(this)" >06.Anomaly</span><br>
+      <audio id="06.Anomaly">
+        <source src="music/06.Anomaly.mp3" type="audio/mpeg">
+       </audio>
+      <span onclick="play(this)" >07.Timepiece</span><br>
+      <audio id="07.Timepiece">
+        <source src="music/07.Timepiece.mp3" type="audio/mpeg">
+       </audio>
+    </div>
+    <img id="art2" src="image/artwork2.png" alt="clip art" width="200" height="200">
+  </div>
+ <div class="music">
+   <img src="image/artwork3.png" alt="clip art" width="400" height="400">
+   <div class="desc">Minorville</div>
+ </div>
+ <div style="background-image: url('image/brtwork3.jpg'); color: #fff;" class="list-image">
+    <p>Minorville</p>
+    <span id="art">Derek Minor.2013</span>
+    <div class="audios">
+      <span onclick="play(this)" >01 NF - Intro</span><br>
+      <audio id="01 NF - Intro">
+        <source src="music/01 NF - Intro.mp3" type="audio/mpeg">
+       </audio>
+      <span onclick="play(this)" >05.Fear</span><br>
+      <audio id="05.Fear">
+        <source src="music/05.Fear.mp3" type="audio/mpeg">
+       </audio>
+      <span onclick="play(this)" >06.Anomaly</span><br>
+      <audio id="06.Anomaly">
+        <source src="music/06.Anomaly.mp3" type="audio/mpeg">
+       </audio>
+      <span onclick="play(this)" >07.Timepiece</span><br>
+      <audio id="07.Timepiece">
+        <source src="music/07.Timepiece.mp3" type="audio/mpeg">
+       </audio>
+    </div>
+    <img id="art2" src="image/artwork3.png" alt="clip art" width="200" height="200">
+  </div>
+ <div class="music">
+   <img src="image/artwork4.png" alt="clip art" width="400" height="400">
+   <div class="desc">Rivers In The Wastland</div>
+ </div>
+ <div style="background-image: url('image/brtwork4.jpg'); color: #fff;" class="list-image">
+    <p></p>
+    <span id="art">Needtobreathe</span>
+    <div class="audios">
+      <span onclick="play(this)" >01 NF - Intro</span><br>
+      <audio id="01 NF - Intro">
+        <source src="music/01 NF - Intro.mp3" type="audio/mpeg">
+       </audio>
+      <span onclick="play(this)" >05.Fear</span><br>
+      <audio id="05.Fear">
+        <source src="music/05.Fear.mp3" type="audio/mpeg">
+       </audio>
+      <span onclick="play(this)" >06.Anomaly</span><br>
+      <audio id="06.Anomaly">
+        <source src="music/06.Anomaly.mp3" type="audio/mpeg">
+       </audio>
+      <span onclick="play(this)" >07.Timepiece</span><br>
+      <audio id="07.Timepiece">
+        <source src="music/07.Timepiece.mp3" type="audio/mpeg">
+       </audio>
+    </div>
+    <img id="art2" src="image/artwork4.png" alt="clip art" width="200" height="200">
+  </div>
+ <div class="music">
+   <img src="image/artwork5.png" alt="clip art" width="400" height="400">
+   <div class="desc">SWOOPE</div>
+ </div>
+ <div class="list-image">
+     <ul>
+       <li>Fear</li>
+       <li>Fear</li>
+       <li>Fear</li>
+       <li>Fear</li>
+       <li>Fear</li>
+       <li>Fear</li>
+       <li>Fear</li>
+     </ul>
+ </div>
+ <div class="music">
+   <img src="image/artwork6.png" alt="clip art" width="400" height="400">
+   <div class="desc">Heroes</div>
+ </div>
+ <div class="list-image">
+     <ul>
+       <li>Fear</li>
+       <li>Fear</li>
+       <li>Fear</li>
+       <li>Fear</li>
+       <li>Fear</li>
+       <li>Fear</li>
+       <li>Fear</li>
+     </ul>
+ </div>
+ <div class="music">
+   <img src="image/artwork7.png" alt="clip art" width="400" height="400">
+   <div class="desc">No More Holding Back</div>
+ </div>
+ <div class="list-image">
+     <ul>
+       <li>Fear</li>
+       <li>Fear</li>
+       <li>Fear</li>
+       <li>Fear</li>
+       <li>Fear</li>
+       <li>Fear</li>
+       <li>Fear</li>
+     </ul>
+ </div>
+ <div class="music">
+   <img src="image/artwork8.png" alt="clip art" width="400" height="400">
+   <div class="desc">Zion</div>
+ </div>
+ <div class="list-image">
+     <ul>
+       <li>Fear</li>
+       <li>Fear</li>
+       <li>Fear</li>
+       <li>Fear</li>
+       <li>Fear</li>
+       <li>Fear</li>
+       <li>Fear</li>
+     </ul>
+ </div>
+ <div class="music">
+   <img src="image/artwork9.png" alt="clip art" width="400" height="400">
+   <div class="desc">Uncomfortable</div>
+ </div>
+ <div class="list-image">
+     <ul>
+       <li>Fear</li>
+       <li>Fear</li>
+       <li>Fear</li>
+       <li>Fear</li>
+       <li>Fear</li>
+       <li>Fear</li>
+       <li>Fear</li>
+     </ul>
+ </div>
+
+<footer>
+   15 songs, 208 minutes, 276.34 MB
+</footer>
+<script>
+ var audio;
+    function openL()
+    {
+      var acc = document.getElementsByClassName("music");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].onclick = function(){
+        this.classList.toggle("music-active");
+        this.nextElementSibling.classList.toggle("show");
+    }
+    }
+    }
+    function play(e)
+    {
+      var id = e.innerHTML;
+      audio = document.getElementById(id);
+      var state = document.getElementById('state').getAttribute("class");
+      if(state == "fa fa-play"){
+      audio.play();
+      changeS();
+    }
+     else if(state == "fa fa-pause"){
+       audio.pause();
+       changeSp();
+     }
+    }
+     function changeS(){
+       document.getElementsByClassName('fa-play')[0].setAttribute("class", "fa fa-pause");
+     }
+     function changeSp(){
+       document.getElementsByClassName('fa-pause')[0].setAttribute("class", "fa fa-play");
+     }
+     function playS()
+     {
+       var state = document.getElementById('state').getAttribute("class");
+       if(state == "fa fa-play"){
+       audio.play();
+       changeS();
+     }
+     else if(state == "fa fa-pause"){
+       audio.pause();
+       changeSp();
+     }
+   }
+   function changeVolume(){
+   audio.volume=document.range.rangeValue.value/100;
+ }
+</script>
+</body>
+</html>

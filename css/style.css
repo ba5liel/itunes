@@ -1,0 +1,224 @@
+nav{
+  padding-bottom: 26px;
+  border-bottom: 1px solid #ddd;
+
+}
+.player{
+  position:relative;
+  width: 100%;
+  height: 60px;
+  background: linear-gradient(rgb(229,229,229),rgb(208,208,208));
+}
+.now-playing{
+  display: inline-block;
+  position:absolute;
+  top: 0px;
+  margin-left:35%;
+  height: inherit;
+  width: 500px;
+  background-color: rgb(236,236,236);
+}
+ul{
+  list-style-type: none;
+  margin-top: 4px;
+}
+li{
+  float:left;
+}
+li a{
+  padding: 7px;
+  color: rgb(98,98,98);
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 15px;
+}
+.fa{
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 4px;
+}
+.fa-backward,.fa-forward,.fa-play,.fa-pause{
+  font-size: 26px;
+  color: rgb(76,76,76);
+}
+.active{
+  background-color: rgb(209,227,247);
+  color: rgb(31,102,177);
+  font-weight: 500;
+}
+li a:hover{
+  text-decoration: none;
+}
+li a:hover:not(.active)
+{
+    color: rgb(68,68,68);
+}
+input[type="search"]{
+  padding: 4px;
+  border: none;
+  border-radius: 4px;
+  padding-left: 20px;
+  width: 150px;
+  font-size: 12px;
+  font-weight: lighter;
+  letter-spacing: .1em;
+  height: 25px;
+}
+ .form-search{
+   position: absolute;
+   top: 29%;
+   right:8%;
+ }
+ .form-search::before{
+   content: "\f002";
+   position: absolute;
+   top: -3px;
+   left: 0;
+   font-family: "FontAwesome";
+   padding-left: 5px;
+   color: #737373;
+   padding-top: 7px;
+   font-size: 13px;
+ }
+.fa-search{
+  font-weight: lighter;
+  color:rgb(103,103,103);
+}
+input[type="search"]:focus{
+  border: 2px solid rgb(31,102,177);
+}
+.header{
+  position: relative;
+  width: 100%;
+  display: inline-block;
+  border-bottom: 1px solid #ccc;
+}
+.header p{
+  position: absolute;
+  right: 40px;
+  top: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.music{
+    display: inline-block;
+    margin: 10px;
+    width: 180px;
+}
+.music img {
+    border: 1px solid #ccc;
+    width: 100%;
+    height: auto;
+}
+.list-image {
+   display: none;
+   position:absolute;
+   background-image:url('../image/brtwork1.jpg');
+   background-size: cover;
+   width: 100%;
+   height: 0px;
+   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.6) inset;
+ }
+ .list-image::before{
+   content: " ";
+   position: absolute;
+   border-style: solid;
+   border-width: 11px;
+   border-color: transparent transparent #555 transparent;
+   top: -21px;
+   left: 90px;
+ }
+.list-image p{
+  margin-left: 30px;
+  margin-top: 10px;
+  font-size: 26px;
+  font-weight: 500;
+}
+#art{
+  position: absolute;
+  top: 45px;
+  left: 35px;
+}
+div.desc {
+    padding: 5px;
+    text-align: center;
+}
+.music-active{
+  width: 190px;
+  height: 190px;
+}
+.show{
+  display: block;
+  height: 240px;
+}
+.audios{
+  width: 70%;
+  column-count: 2;
+  column-rule: 1px solid #aaa;
+  border-top: 1px solid #ccc;
+  margin-left: 30px;
+  height: 100px;
+}
+#art2{
+  position: absolute;
+  right: 50px;
+  top:20px;
+  box-shadow: 0px 0px 35px  rgba(0, 0, 0, 0.2);;
+}
+.audios span{
+position: absolute;
+margin-left: 30px;
+margin-top: 10px;
+padding: 2px;
+font-size: 14.3px;
+padding-left: 16px;
+width: 450px;
+cursor: pointer;
+}
+.audios span:hover{
+  background-color: rgba(115, 38, 38,.7);
+  border-radius: 4px;
+  color: #fff;
+}
+.title-song{
+  position: absolute;
+  margin-top: 10px;
+  width: 75%;
+  height: 70px;
+  border-bottom: 1px solid #555;
+}
+.now-playing h6{
+ display: inline-block;
+ margin: 0 120px;
+ font-weight: bolder;
+}
+.title-song p{
+  margin-left: 20px;
+  font-size: 16px;
+}
+.slidingText {
+  position: absolute;
+  color: #8c8c8c;
+  font-size: 14px;
+  bottom: 0px;
+}
+.signIn{
+  position:absolute;
+  display: inline;
+  top:29%;
+  left: 73%;
+  cursor: pointer;
+}
+footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #aaa;
+  text-align: center;
+  margin-left: auto;
+  background: linear-gradient(#e6e6e6, #d7d7d7);
+  font-size: 12px;
+  font-family: sans-serif;
+}
